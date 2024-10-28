@@ -1,0 +1,79 @@
+							AWS CLOUD TUTORIAL
+AWS CLOUD COMPUTING
+1, What is the client-server model ?
+- Client-Server Model là bao gồm một client có những tương tác và những yêu câu đến một server
+- Client là một đường mà một người có thể tương tác với server
+
+2, What is cloud computing? 
+- Server làm những nhiệm vụ cho client and return lại thông tin đó cho client
+- Điện toán đám mây là một dịch vụ điện toán được cung cấp qua internet.
+- Điện toán đám mây là model dùng bao nhiêu thì trả bấy nhiêu cho việc lưu trữ nguồn IT
+- Bạn chỉ cần trả cái gì bạn dùng 
+
+3, Deployment Models
+- Có 3 kiểu khác nhau để deployment 
+	+ Cloud-based
+	+ On-premises
+	+ Hybrid
+- Những model là những cách truy cập khác nhau thông qua internet, local hay là kết hợp cả hai
++ Cloud-Based Deployment
+	. Mọi thứ đều chạy trên cloud
+	. Model này cho phép bạn xây dựng những ứng dụng mới hoặc di chuyển những cái đã tồn tại lên cloud
+	. Có những cấp độ khác nhau của phạm vi dịch vụ từ thấp đến cao
+	. Những cấp độ của dịch vụ tùy thuộc vào yêu cầu về quản lí, kiến trúc và hạ tầng của bạn
+	. Ví dụ: Một công ty có thể tạo ra một ứng dụng bao gồm các server ảo, databases và networking hoàn toàn dựa trên cloud
+
++ On-premised
+	. Triển khai tài nguyên bằng cách sử dụng các công cụ ảo hóa và quản lý tài nguyên.
+	. Ví dụ: bạn có thể có các ứng dụng chạy trên công nghệ được lưu giữ hoàn toàn trong trung tâm dữ liệu tại chỗ của bạn.
+
++ Hybrid Deployment
+	. Trong triển khai kết hợp, bạn kết nối tài nguyên đám mây với cơ sở hạ tầng tại chỗ.
+	. Ví dụ: bạn đang làm việc với dữ liệu nhạy cảm hoặc tuân theo các quy định cụ thể của chính phủ.
+
+AWS CLOUD EC2
+AWS-Virtual Cloud Server
+- EC2 là một server ảo trong aws cloud 
+- Nó được tang giảm công suất 1 cách dễ dàng
+
+Compute Optimized Instance: cái này phù hợp cho những ứng dung cần tính toán nhanh
+Memory optimized Instance: Cái này phù hợp cho những ứng dung cần lưu trữ nhiều 
+Accelerated Computing Instance: Cái này để tăng tốc phần cứng, phù hợp cho ứng dụng đồ họa 				và trực tuyến
+Storage Optimized Instances: Cái này phù hợp cho việc lưu trữ lớn ở Local Storage
+
+AWS Cloud EC2 Pricing
+- On-Demand Instances là lựa chọn tốt nhất cho công việc ngắn haạn, Nó yêu cầu không cần thanh toán trước hay giới hạn về dung lượng, nó sẽ chạy đến khi bạn dừng nó.
+- Aws Ec2 Saving Plan là một cam kết sử dung từ 1-3 năm, Committing để trong giai đoạn đó sẽ được giảm giá, Nếu bạn sử dung quá ngân sách, chi phí sẽ thành thông thường (như on-demand)
+- Reserved Instances được sử dungj dành riêng cho một khoảng thời gian đã thỏa thuận
+Lựa chọn dành cho 1 hoặc 3 năm . Về sau thì giảm giá sẽ cao hơn
+- Spot Instance là lựa chọn tốt nhất cho công việc với việc flex bắt đầu và kết thúc, cái này nó có thể ngắt, nó có thể tiết kiệm được 90% chi phí
+- Dedicated Hosts là máy chủ vật lý hoàn toàn dành riêng cho bạn, bạn có thể sử dụng phiên bản phần mềm VM để exit. phiên bản này là đắt nhất.
+
+AWS Cloud EC2 Scaling
+- Scaling là việc chỉ sử dụng những nguồn mà bạn cần
+- Ngoài ra, Nó có sự linh hoạt để phát triển một cách đa dạng
+- Chắc chắn nó sẽ có một kiến trúc để xử lý những thay đổi trong yêu cầu
+- Thiết kế một kiến trức scaling cho phép bạn chỉ phải trẻ những nguồn mà bạn cần ở mọi thời điểm
+- Aws EC2 Auto Scaling: 
+	+ Servers có thể lấy nhiều yêu cầu hơn để chúng xử lý
+	+ Có qua nhiều yêu cầu có thể là nguyên nhân gây timeout and mất điện
+	+ Aws EC2 auto scalling cho phép bạn thêm hoặc xóa EC2 instance 1 cách tự động
+	+ Nó tự động hóa công suất theo nhu cầu
+	+ Có 2 loại cách tiếp cận:
+		. Dynamic Scaling: trả về sự thay đổi của nhu cầu
+		. Predictive Scaling: Lên lịch số lượng phiên bản dựa trên việc dự đoán yêu 		cầu
+		. 2 cái này có thể gộp vào với nhau
+
+	+ Minimum Capacity: nó sẽ vận hành khi nó cần thiết
+	+ Desired Number: nó được cài đặt trong một nhóm scaling, tuy nhiên mặc định của nó 	luôn là công suất tối thiểu nếu k được chỉ định
+	+ Maximum Capacity
+
+
+
+
+
+
+
+
+
+
